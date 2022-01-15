@@ -1,0 +1,457 @@
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(gambar/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+.logo{
+    width: 140px;
+    cursor: pointer;
+    color: white;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+.gabung-skr{
+    background: white;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.container{
+    padding: 0 7%;
+}
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: white; 
+    text-align: center;
+    padding-top: 22%;
+}
+.search-bar{
+    background: white;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.search-bar form button{
+    background: #00BFFF;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.search-bar form button img{
+    width: 15px;
+    margin-top: 7px;
+}
+.lokasi-input{
+    flex: 1;
+}
+.search-bar form label{
+    font-weight: 600;
+}
+
+/* -------------- rekomendasi ------------*/
+
+.sub-title{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+}
+.rekomendasi{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+.rekomendasi div img{
+    width: 100%;
+    border-radius: 10px;
+}
+.rekomendasi div{
+    position: relative;
+}
+
+/* ------------------ Masakan luar negeri ---------------------- */
+.makanan-luar{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 30px;
+}
+.makanan-luar div img{
+    width: 100%;
+    border-radius: 10px;
+}
+.makanan-luar h3{
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* --------------------- Cta ------------------------- */
+.cta{
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #3f2321, transparent), url(gambar/background\ 2.jfif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: #fff;
+}
+.cta h3{
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+.cta p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.cta-src{
+    background: #00BFFF;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* ---------------------------- tentang AyoMakan ------------------ */
+.about-ayomakan{
+    text-align: center;
+    margin: 80px 0;
+    color: #333;
+    font-size: 17px;
+}
+.about-ayomakan h2{
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* ------------------------- Footer --------------------------*/
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+}
+.footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+.footer hr{
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+.footer p{
+    padding-bottom: 15px;
+}
+
+.active{
+    position: relative;
+}
+.active::after{
+    content: '';
+    background: #fff;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
+/* ------------------ halaman temukan -------------- */
+.navbar-temukan{
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+.navbar-temukan .nav-links li a{
+    color: black;
+}
+.navbar-temukan .gabung-skr{
+    background: #00BFFF;
+    color: white;
+} 
+.navbar-temukan .active::after{
+    background: #00BFFF;
+}
+.list-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left-col{
+    flex-basis: 70%;
+}
+.right-col{
+    flex-basis: 25%;
+}
+.left-col h1{
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.restoran{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+.restoran-img{
+    flex-basis: 40%;
+}
+.restoran-info{
+    flex-basis: 58%;
+    color: #555;
+}
+.restoran-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+.restoran-info h3{
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    margin: 4px 0;
+}
+.restoran-info i{
+    color: #00BFFF;
+    font-size: 18px;
+}
+.sidebar{
+    border: 1px solid #999;
+    padding: 20px 30px;
+    margin-top: 30px;
+}
+.sidebar h2{
+    font-weight: 500;
+}
+.sidebar h3{
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+.filter{
+    display: flex;
+    align-items: center;color: #555;
+    margin-bottom: 10px;
+}
+.filter p{
+    flex: 1;
+}
+.filter input{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.sidebar-link{
+    text-align: right;
+    margin: 20px 0;
+}
+.sidebar-link a{
+    text-decoration: none;
+}
+.untukgeser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.untukgeser img{
+    width: 15px;
+    margin: 10px 20px;
+}
+.kanan-arrow{
+    transform: rotate(180deg);
+}
+.untukgeser span{
+    margin: 10px 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.untukgeser .sekarang{
+    background: #333;
+    color: white;
+}
+
+/*----------------- Info-restoran ---------------*/
+.resto-detail{
+    padding: 0 12%;
+}
+.resto-nama{
+    margin-top: 50px;
+}
+.resto-nama h1{
+    font-weight: 600;
+}
+.resto-nama .baris{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0;
+}
+.resto-nama span{
+    margin: 0 20px;
+}
+
+.resto-nama i{
+    color: #00BFFF;
+    font-size: 14px;
+}
+.galeri{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 'first first . .''first first . .' ;
+    margin: 20px 0;
+}
+.galeri div img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+.galeri-1{
+    grid-area: first;
+}
+
+.info-lebih h2{
+    font-weight: 500;
+}
+.line{
+    border: 0;
+    height: 1px;
+    background: black;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0 50px;
+}
+
+.tentang-resto{
+    padding: 0;
+}
+
+/*--------------------- rating ---------------------*/
+.rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
+}
+  
+.rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+}
+  
+.rating label:last-child {
+    position: static;
+}
+  
+.rating label:nth-child(1) {
+    z-index: 5;
+}
+  
+.rating label:nth-child(2) {
+    z-index: 4;
+}
+  
+.rating label:nth-child(3) {
+    z-index: 3;
+}
+  
+.rating label:nth-child(4) {
+    z-index: 2;
+}
+  
+.rating label:nth-child(5) {
+    z-index: 1;
+}
+  
+.rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+  
+.rating label .icon {
+    float: left;
+    color: transparent;
+}
+  
+.rating label:last-child .icon {
+    color: #000;
+}
+  
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+    color: #09f;
+}
+  
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #09f;
+}
+
+
+.tentang-info{
+    margin: 80px 0;
+    background-image: linear-gradient(to right, #3f2321, transparent), url(gambar/bg1.jfif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color: white;
+}
+.tentang-info h3{
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 500;
+}
+.tentang-info p{
+    font-size: 18px;
+    margin: 10px 0;
